@@ -1,0 +1,34 @@
+
+public class SpacedLogger implements Logger {
+
+	public void log(String str1) {
+		if(str1 == "Hello") 
+			System.out.println("H e l l o");
+		else {
+			
+			StringBuilder sb = new StringBuilder(str1);
+			char space = ' ';
+		    
+			for(int i = 0; i<str1.length(); i =  i+2) {
+				sb.insert(i+1, space);
+			}
+			System.out.println(sb.toString());
+		}
+	}
+
+	public void error(String str2) {
+		if(str2 == "Hello")
+			System.out.println("ERROR: H e l l o");
+		else {
+			StringBuilder sb = new StringBuilder(str2);
+			char space = ' ';
+		    
+			for(int i = 0; i<str2.length(); i =  i+2) {
+				sb.insert(i+1, space);
+			}
+		
+			System.out.print("ERROR: "+ sb.toString());
+		}
+	}
+
+}

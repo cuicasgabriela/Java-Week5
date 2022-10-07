@@ -1,0 +1,22 @@
+
+public class App {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		SpacedLogger object = new SpacedLogger();
+		object.log("Hello");
+		object.log("ate");
+		
+		object.error("Hello");
+		object.error("ate");
+		
+		
+		AsteriskLogger object2 = new AsteriskLogger();
+		System.out.println(" \n\nAstrisk Logger: log () ");
+		object2.log("Hello");
+		
+		System.out.println(" \nAstrisk Logger: error () ");
+		object2.error("Hello");
+	}
+
+}

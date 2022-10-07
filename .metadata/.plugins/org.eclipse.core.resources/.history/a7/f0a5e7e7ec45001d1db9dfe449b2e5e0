@@ -1,0 +1,19 @@
+
+public class AsteriskLogger implements Logger {
+	public void log(String str1) {
+		if(str1 == "Hello") 
+			System.out.println("H e l l o");
+		else
+			System.out.println("***"+ str1 + "***");
+	}
+
+	public void error(String str2) {
+		if(str2 == "Hello")
+			System.out.println("ERROR: H e l l o");
+		else {
+		System.out.println("****************");
+		System.out.println("***Error: "+ str2 + "***");
+		System.out.println("****************");
+		}
+	}
+}

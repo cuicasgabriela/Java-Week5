@@ -1,0 +1,14 @@
+
+public class App {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		SpacedLogger object = new SpacedLogger();
+		object.log("Hello");
+		object.log("ate");
+		
+		object.error("Hello");
+		object.error("ate");
+	}
+
+}
